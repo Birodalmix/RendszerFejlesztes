@@ -1,0 +1,265 @@
+/*Color palette:
+-a szövegekhez -> #FEFAE0
+-a kijelölt dolgokhoz -> #DDA15E
+-az alap dolgokhoz -> #BC6C25
+-az általános hátterekhez -> #606C38
+-az oldal hátteréhez -> #283618
+*/
+/*-------------------------- Add a STYLE to the FULLPAGE ------------------------------------------*/
+html,body,head,header,footer{
+    font-family: Tahoma, Verdana, sans-serif;
+    background-color: #BC6C25;
+}
+/*-------------------------- Add a STYLE to the TOP navigation ------------------------------------------*/
+.topnav {
+    border-radius: 8px;
+    background-color: #283618;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #FEFAE0;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: 0.6s;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color:#606C38;
+    color:#FEFAE0;
+    transition-duration: 0.6s;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color:  #606C38;
+    color: #FEFAE0;
+  }
+
+  .kijelentkezes{
+    background-color: #606C38;
+    border: none;
+    color: #FEFAE0;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 17px;
+    transition-duration: 0.6s;
+  }
+  .kijelentkezes:hover{
+    background-color: #84A98C;
+    border: none;
+    color: #354F52;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    float: right;
+    font-size: 17px;
+    transition-duration: 0.6s;
+    cursor: pointer;
+  }
+  /*-------------------------- Add a STYLE to the FORM ------------------------------------------*/
+  ::placeholder{
+    color:#e2e6e0;
+  }
+  input[type=text]{
+    border-radius: 8px;
+    text-align: center;
+    background-color: #354F52;
+    color: #e2e6e0;
+    transition: width 0.4s ease-in-out;
+    text-decoration: none;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-width: fit-content;
+}
+  input[type=text]:focus {
+    width: 35%;
+    min-width: fit-content;
+}
+  input[type=file]{
+    border-radius: 8px;
+    text-align: center;
+    background-color: #354F52;
+    color: #e2e6e0;
+    text-decoration: none;
+    border: none;
+    width: 30%;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    min-width: fit-content;
+}
+  input[type=button]{
+    border-radius: 8px;
+    transition: width 0.6s ease-in-out;
+    text-align: center;
+    background-color: #354F52;
+    color: #e2e6e0;
+    text-decoration: none;
+    border: none;
+    width: 20%;
+    padding: 10px;
+    margin: 25px;
+    min-width: fit-content;
+    float: right;
+}
+input[type=button]:hover{
+    transition: width 0.6s ease-in-out;
+    text-align: center;
+    background-color: #84A98C;
+    color: #354F52;
+    text-decoration: none;
+    border: none;
+    width: 23%;
+    float: right;
+    min-width: fit-content;
+}
+.uploadbox{
+  margin: auto;
+  max-width: 40%;
+}
+.uploadbox p{
+  text-align: center;
+  color: #e2e6e0;
+}
+a{
+  text-decoration: underline;
+  color: #e2e6e0;
+}
+.labelforcheckbox{
+  text-decoration: none;
+  color: #e2e6e0;
+}
+   /*-------------------------- Add a STYLE to the Pofile Data ------------------------------------------*/
+	.user-data{
+		margin: auto;
+		width: 50%;
+		padding: 10px;
+	  }
+	  table {
+		border-collapse: collapse;
+		width: 100%;
+		color: #e2e6e0;
+		border-radius: 8px;
+	  }
+	  td, th {
+		border: 1px solid #354F52;
+		text-align: center;
+		padding: 8px;
+	  }
+	  
+	  tr:nth-child(even) {
+		background-color: #354F52;
+	  }
+	  .passwordshow{
+		border-radius: 8px;
+		text-align: center;
+		background-color: #354F52;
+		color: #e2e6e0;
+		transition: width 0.4s ease-in-out;
+		text-decoration: none;
+		border: none;
+		width: 30%;
+		padding: 10px;
+		min-width: fit-content;
+	  }
+    #content{
+      display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(5);
+        grid-gap: auto;
+      margin: auto;
+      border: none;
+      background-color: none;
+      max-width: 100%;
+      
+    }
+    @media only screen and (max-width: 1300px) {
+        #content{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(5);
+            grid-gap: auto;
+            margin: auto;
+            border: none;
+            background-color: none;
+            max-width: 100%;
+        }
+      }
+      @media only screen and (max-width: 800px) {
+        #content{
+            display:grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(5);
+            grid-gap: auto;
+            margin: left 50px;
+            border: none;
+            background-color: none;
+            max-width: 100%;
+            
+        }
+      }
+    
+    .termek{
+      background-color: #DDA15E;
+      color: #FEFAE0;
+      border: solid 1px;
+        border-color: #DDA15E;
+      border-radius: 5px;
+        /*korábban 200px volt a szélesség*/
+      max-width: 400px;
+      max-height: 700px;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 10px;
+    }
+    .termek img{
+        max-width: 400px;
+        border-radius: 10px;
+    }
+    .termek p{
+      font-size: 20px;
+      text-align: center;
+        color: #d0dbcb;
+    }
+    .leiras{
+        font-size: 20px;
+      text-align: center;
+        color: #d0dbcb;
+    }
+    .more{
+        background-color: #BC6C25;
+        color: #e2e6e0;
+        border: none;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        float: right;
+        font-size: 17px;
+        transition-duration: 0.6s;
+        border-radius: 10px;
+      }
+    .more:hover{
+        background-color: #DDA15E;
+        color: #354F52;
+        border: none;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        float: right;
+        font-size: 17px;
+        transition-duration: 0.6s;
+        cursor: pointer;
+        border-radius: 10px;
+      }
